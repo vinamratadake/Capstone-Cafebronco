@@ -10,15 +10,32 @@ import UIKit
 import Firebase
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, ESTBeaconManagerDelegate {
 
     var window: UIWindow?
+    
+    // 2. Add a property to hold the beacon manager and instantiate it
+    let beaconManager = ESTBeaconManager()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
+
         FIRApp.configure()
+        
+        // 3. Set the beacon manager's delegate
+        self.beaconManager.delegate = self
+        
+        // 4. Authorization request is set to always
+        self.beaconManager.requestAlwaysAuthorization()
+        
+        // 5. To start monitoring using beacons
+        self.beaconManager.startMonitoring(for: CLBeaconRegion(proximityUUID:UUID(uuidString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D")!, major: 34851, minor: 7108, identifier: "monitored regions"))
+        
+        // 6. Requesting access to Location Services to use iBeacon features
+        UIApplication.shared.registerUserNotificationSettings(
+            UIUserNotificationSettings(types: .alert, categories: nil))
+
         return true
     }
 
@@ -43,6 +60,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    //API to integrate beacons in cafebronco app
+    
+    func beaconManager(_ manager: Any, didEnter region: CLBeaconRegion) {
+        let notification = UILocalNotification()
+        notification.alertBody =
+            " Take away free food between 10:30 - 11:00 PM, only at La Parilla." + " Dont forget to stop by! "
+        UIApplication.shared.presentLocalNotificationNow(notification)
+    }
+
 
 
 }

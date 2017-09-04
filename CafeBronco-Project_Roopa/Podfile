@@ -19,5 +19,7 @@ target 'Capstone_CafeBronco' do
 
   pod 'Firebase/Core'
   pod 'Firebase/Database'
+  pod 'EstimoteSDK'
+
 
 end
