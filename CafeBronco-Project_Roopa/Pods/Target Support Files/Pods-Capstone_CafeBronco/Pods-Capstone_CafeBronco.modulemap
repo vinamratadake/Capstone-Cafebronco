@@ -1,0 +1,6 @@
+framework module Pods_Capstone_CafeBronco {
+  umbrella header "Pods-Capstone_CafeBronco-umbrella.h"
+
+  export *
+  module * { export * }
+}

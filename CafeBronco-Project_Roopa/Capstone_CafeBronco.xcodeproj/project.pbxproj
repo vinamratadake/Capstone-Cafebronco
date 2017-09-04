@@ -1,0 +1,807 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5AAC0A541F40DB190093BBBD /* Mission_Bakery_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC0A531F40DB190093BBBD /* Mission_Bakery_ViewController.swift */; };
+		5AAC0A561F4111160093BBBD /* Salad_Bar_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC0A551F4111160093BBBD /* Salad_Bar_ViewController.swift */; };
+		5AAC0A581F4111320093BBBD /* La_Parilla_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC0A571F4111320093BBBD /* La_Parilla_ViewController.swift */; };
+		5AAC0A5A1F41176B0093BBBD /* Order_summary_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC0A591F41176B0093BBBD /* Order_summary_ViewController.swift */; };
+		5AAC0A5C1F4A71C40093BBBD /* QR_Code_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC0A5B1F4A71C40093BBBD /* QR_Code_ViewController.swift */; };
+		6F2EBFEF1EDAB2B9005BD4D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2EBFEE1EDAB2B9005BD4D1 /* AppDelegate.swift */; };
+		6F2EBFF11EDAB2B9005BD4D1 /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2EBFF01EDAB2B9005BD4D1 /* RestaurantsViewController.swift */; };
+		6F2EBFF31EDAB2B9005BD4D1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2EBFF21EDAB2B9005BD4D1 /* ProfileViewController.swift */; };
+		6F2EBFF61EDAB2B9005BD4D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F2EBFF41EDAB2B9005BD4D1 /* Main.storyboard */; };
+		6F2EBFF81EDAB2B9005BD4D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F2EBFF71EDAB2B9005BD4D1 /* Assets.xcassets */; };
+		6F2EBFFB1EDAB2B9005BD4D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F2EBFF91EDAB2B9005BD4D1 /* LaunchScreen.storyboard */; };
+		6F2EC0061EDAB2B9005BD4D1 /* Capstone_CafeBroncoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2EC0051EDAB2B9005BD4D1 /* Capstone_CafeBroncoTests.swift */; };
+		6F2EC0111EDAB2B9005BD4D1 /* Capstone_CafeBroncoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2EC0101EDAB2B9005BD4D1 /* Capstone_CafeBroncoUITests.swift */; };
+		6F4E4D581EDCC8A70097ECD5 /* MenuItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4E4D571EDCC8A70097ECD5 /* MenuItemsTableViewController.swift */; };
+		6F57E2FD1F4E94C100574F07 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6F57E2FC1F4E94C100574F07 /* GoogleService-Info.plist */; };
+		6F57E2FF1F4EBAB900574F07 /* CustOrderHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F57E2FE1F4EBAB900574F07 /* CustOrderHistoryViewController.swift */; };
+		6F57E3021F4EBD3400574F07 /* CustOrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F57E3001F4EBD3400574F07 /* CustOrderDetailViewController.swift */; };
+		6F57E3031F4EBD3400574F07 /* CustOrderDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F57E3011F4EBD3400574F07 /* CustOrderDetailViewController.xib */; };
+		6FB665451F5B5DA90085E9CB /* VendorOrderHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB665441F5B5DA90085E9CB /* VendorOrderHistoryTableViewController.swift */; };
+		6FB665481F5B60B20085E9CB /* VendorOrderDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB665461F5B60B20085E9CB /* VendorOrderDetailsViewController.swift */; };
+		6FB665491F5B60B20085E9CB /* VendorOrderDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FB665471F5B60B20085E9CB /* VendorOrderDetailsViewController.xib */; };
+		6FB6654C1F5B67820085E9CB /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB6654A1F5B67820085E9CB /* LogInViewController.swift */; };
+		6FB6654D1F5B67820085E9CB /* LogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FB6654B1F5B67820085E9CB /* LogInViewController.xib */; };
+		A59A8D0611F8DEFA6097682B /* Pods_Capstone_CafeBroncoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B190FFE2EE09B9A552C93B0 /* Pods_Capstone_CafeBroncoTests.framework */; };
+		C7708035895BDFC288BC9C36 /* Pods_Capstone_CafeBronco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA101BCAF122B11BA30AC46 /* Pods_Capstone_CafeBronco.framework */; };
+		E02455D8CACC5FFF944BA0DD /* Pods_Capstone_CafeBroncoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 356EE27038BB5BEA43785055 /* Pods_Capstone_CafeBroncoUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F2EC0021EDAB2B9005BD4D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F2EBFE31EDAB2B9005BD4D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F2EBFEA1EDAB2B9005BD4D1;
+			remoteInfo = Capstone_CafeBronco;
+		};
+		6F2EC00D1EDAB2B9005BD4D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F2EBFE31EDAB2B9005BD4D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F2EBFEA1EDAB2B9005BD4D1;
+			remoteInfo = Capstone_CafeBronco;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E6964F73971F5410C0A9E42 /* Pods-Capstone_CafeBroncoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capstone_CafeBroncoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Capstone_CafeBroncoUITests/Pods-Capstone_CafeBroncoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		30CB1631705FB2137190889E /* Pods-Capstone_CafeBroncoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capstone_CafeBroncoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Capstone_CafeBroncoUITests/Pods-Capstone_CafeBroncoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		356EE27038BB5BEA43785055 /* Pods_Capstone_CafeBroncoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Capstone_CafeBroncoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48C47B54C0E80FDDC4B290B9 /* Pods-Capstone_CafeBronco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capstone_CafeBronco.release.xcconfig"; path = "Pods/Target Support Files/Pods-Capstone_CafeBronco/Pods-Capstone_CafeBronco.release.xcconfig"; sourceTree = "<group>"; };
+		5AAC0A531F40DB190093BBBD /* Mission_Bakery_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mission_Bakery_ViewController.swift; sourceTree = "<group>"; };
+		5AAC0A551F4111160093BBBD /* Salad_Bar_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Salad_Bar_ViewController.swift; sourceTree = "<group>"; };
+		5AAC0A571F4111320093BBBD /* La_Parilla_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = La_Parilla_ViewController.swift; sourceTree = "<group>"; };
+		5AAC0A591F41176B0093BBBD /* Order_summary_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order_summary_ViewController.swift; sourceTree = "<group>"; };
+		5AAC0A5B1F4A71C40093BBBD /* QR_Code_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QR_Code_ViewController.swift; sourceTree = "<group>"; };
+		65ACE1BC21BF80C28F5C2459 /* Pods-Capstone_CafeBroncoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capstone_CafeBroncoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Capstone_CafeBroncoTests/Pods-Capstone_CafeBroncoTests.release.xcconfig"; sourceTree = "<group>"; };
+		6F2EBFEB1EDAB2B9005BD4D1 /* Capstone_CafeBronco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capstone_CafeBronco.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F2EBFEE1EDAB2B9005BD4D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6F2EBFF01EDAB2B9005BD4D1 /* RestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewController.swift; sourceTree = "<group>"; };
+		6F2EBFF21EDAB2B9005BD4D1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		6F2EBFF51EDAB2B9005BD4D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6F2EBFF71EDAB2B9005BD4D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F2EBFFA1EDAB2B9005BD4D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6F2EBFFC1EDAB2B9005BD4D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F2EC0011EDAB2B9005BD4D1 /* Capstone_CafeBroncoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Capstone_CafeBroncoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F2EC0051EDAB2B9005BD4D1 /* Capstone_CafeBroncoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capstone_CafeBroncoTests.swift; sourceTree = "<group>"; };
+		6F2EC0071EDAB2B9005BD4D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F2EC00C1EDAB2B9005BD4D1 /* Capstone_CafeBroncoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Capstone_CafeBroncoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F2EC0101EDAB2B9005BD4D1 /* Capstone_CafeBroncoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capstone_CafeBroncoUITests.swift; sourceTree = "<group>"; };
+		6F2EC0121EDAB2B9005BD4D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F4E4D571EDCC8A70097ECD5 /* MenuItemsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemsTableViewController.swift; sourceTree = "<group>"; };
+		6F57E2FC1F4E94C100574F07 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6F57E2FE1F4EBAB900574F07 /* CustOrderHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustOrderHistoryViewController.swift; sourceTree = "<group>"; };
+		6F57E3001F4EBD3400574F07 /* CustOrderDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustOrderDetailViewController.swift; sourceTree = "<group>"; };
+		6F57E3011F4EBD3400574F07 /* CustOrderDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustOrderDetailViewController.xib; sourceTree = "<group>"; };
+		6FB665441F5B5DA90085E9CB /* VendorOrderHistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VendorOrderHistoryTableViewController.swift; sourceTree = "<group>"; };
+		6FB665461F5B60B20085E9CB /* VendorOrderDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VendorOrderDetailsViewController.swift; sourceTree = "<group>"; };
+		6FB665471F5B60B20085E9CB /* VendorOrderDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VendorOrderDetailsViewController.xib; sourceTree = "<group>"; };
+		6FB6654A1F5B67820085E9CB /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		6FB6654B1F5B67820085E9CB /* LogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInViewController.xib; sourceTree = "<group>"; };
+		8B190FFE2EE09B9A552C93B0 /* Pods_Capstone_CafeBroncoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Capstone_CafeBroncoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DA101BCAF122B11BA30AC46 /* Pods_Capstone_CafeBronco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Capstone_CafeBronco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0B761F3727BD35B15190226 /* Pods-Capstone_CafeBronco.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capstone_CafeBronco.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Capstone_CafeBronco/Pods-Capstone_CafeBronco.debug.xcconfig"; sourceTree = "<group>"; };
+		D756D856DBA9E77A0FA85744 /* Pods-Capstone_CafeBroncoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capstone_CafeBroncoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Capstone_CafeBroncoTests/Pods-Capstone_CafeBroncoTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F2EBFE81EDAB2B9005BD4D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7708035895BDFC288BC9C36 /* Pods_Capstone_CafeBronco.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F2EBFFE1EDAB2B9005BD4D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A59A8D0611F8DEFA6097682B /* Pods_Capstone_CafeBroncoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F2EC0091EDAB2B9005BD4D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E02455D8CACC5FFF944BA0DD /* Pods_Capstone_CafeBroncoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50C7C2D61D1575528E5D584F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DA101BCAF122B11BA30AC46 /* Pods_Capstone_CafeBronco.framework */,
+				8B190FFE2EE09B9A552C93B0 /* Pods_Capstone_CafeBroncoTests.framework */,
+				356EE27038BB5BEA43785055 /* Pods_Capstone_CafeBroncoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6428B430C3DFB11693BE1D87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0B761F3727BD35B15190226 /* Pods-Capstone_CafeBronco.debug.xcconfig */,
+				48C47B54C0E80FDDC4B290B9 /* Pods-Capstone_CafeBronco.release.xcconfig */,
+				D756D856DBA9E77A0FA85744 /* Pods-Capstone_CafeBroncoTests.debug.xcconfig */,
+				65ACE1BC21BF80C28F5C2459 /* Pods-Capstone_CafeBroncoTests.release.xcconfig */,
+				30CB1631705FB2137190889E /* Pods-Capstone_CafeBroncoUITests.debug.xcconfig */,
+				1E6964F73971F5410C0A9E42 /* Pods-Capstone_CafeBroncoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6F2EBFE21EDAB2B9005BD4D1 = {
+			isa = PBXGroup;
+			children = (
+				6F2EBFED1EDAB2B9005BD4D1 /* Capstone_CafeBronco */,
+				6F2EC0041EDAB2B9005BD4D1 /* Capstone_CafeBroncoTests */,
+				6F2EC00F1EDAB2B9005BD4D1 /* Capstone_CafeBroncoUITests */,
+				6F2EBFEC1EDAB2B9005BD4D1 /* Products */,
+				6428B430C3DFB11693BE1D87 /* Pods */,
+				50C7C2D61D1575528E5D584F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6F2EBFEC1EDAB2B9005BD4D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F2EBFEB1EDAB2B9005BD4D1 /* Capstone_CafeBronco.app */,
+				6F2EC0011EDAB2B9005BD4D1 /* Capstone_CafeBroncoTests.xctest */,
+				6F2EC00C1EDAB2B9005BD4D1 /* Capstone_CafeBroncoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F2EBFED1EDAB2B9005BD4D1 /* Capstone_CafeBronco */ = {
+			isa = PBXGroup;
+			children = (
+				6F2EBFEE1EDAB2B9005BD4D1 /* AppDelegate.swift */,
+				6F2EBFF01EDAB2B9005BD4D1 /* RestaurantsViewController.swift */,
+				6F2EBFF21EDAB2B9005BD4D1 /* ProfileViewController.swift */,
+				6F2EBFF41EDAB2B9005BD4D1 /* Main.storyboard */,
+				5AAC0A5B1F4A71C40093BBBD /* QR_Code_ViewController.swift */,
+				5AAC0A551F4111160093BBBD /* Salad_Bar_ViewController.swift */,
+				5AAC0A571F4111320093BBBD /* La_Parilla_ViewController.swift */,
+				5AAC0A531F40DB190093BBBD /* Mission_Bakery_ViewController.swift */,
+				5AAC0A591F41176B0093BBBD /* Order_summary_ViewController.swift */,
+				6F57E2FE1F4EBAB900574F07 /* CustOrderHistoryViewController.swift */,
+				6F57E3001F4EBD3400574F07 /* CustOrderDetailViewController.swift */,
+				6F4E4D571EDCC8A70097ECD5 /* MenuItemsTableViewController.swift */,
+				6F57E3011F4EBD3400574F07 /* CustOrderDetailViewController.xib */,
+				6FB665441F5B5DA90085E9CB /* VendorOrderHistoryTableViewController.swift */,
+				6FB665461F5B60B20085E9CB /* VendorOrderDetailsViewController.swift */,
+				6FB665471F5B60B20085E9CB /* VendorOrderDetailsViewController.xib */,
+				6FB6654A1F5B67820085E9CB /* LogInViewController.swift */,
+				6FB6654B1F5B67820085E9CB /* LogInViewController.xib */,
+				6F2EBFF71EDAB2B9005BD4D1 /* Assets.xcassets */,
+				6F2EBFF91EDAB2B9005BD4D1 /* LaunchScreen.storyboard */,
+				6F2EBFFC1EDAB2B9005BD4D1 /* Info.plist */,
+				6F57E2FC1F4E94C100574F07 /* GoogleService-Info.plist */,
+			);
+			path = Capstone_CafeBronco;
+			sourceTree = "<group>";
+		};
+		6F2EC0041EDAB2B9005BD4D1 /* Capstone_CafeBroncoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F2EC0051EDAB2B9005BD4D1 /* Capstone_CafeBroncoTests.swift */,
+				6F2EC0071EDAB2B9005BD4D1 /* Info.plist */,
+			);
+			path = Capstone_CafeBroncoTests;
+			sourceTree = "<group>";
+		};
+		6F2EC00F1EDAB2B9005BD4D1 /* Capstone_CafeBroncoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6F2EC0101EDAB2B9005BD4D1 /* Capstone_CafeBroncoUITests.swift */,
+				6F2EC0121EDAB2B9005BD4D1 /* Info.plist */,
+			);
+			path = Capstone_CafeBroncoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F2EBFEA1EDAB2B9005BD4D1 /* Capstone_CafeBronco */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F2EC0151EDAB2B9005BD4D1 /* Build configuration list for PBXNativeTarget "Capstone_CafeBronco" */;
+			buildPhases = (
+				54E5F18B9741D8824C55A464 /* [CP] Check Pods Manifest.lock */,
+				6F2EBFE71EDAB2B9005BD4D1 /* Sources */,
+				6F2EBFE81EDAB2B9005BD4D1 /* Frameworks */,
+				6F2EBFE91EDAB2B9005BD4D1 /* Resources */,
+				7F10B0A76C449FC02567A79B /* [CP] Embed Pods Frameworks */,
+				103B8E8F0BC84B7F72286B23 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Capstone_CafeBronco;
+			productName = Capstone_CafeBronco;
+			productReference = 6F2EBFEB1EDAB2B9005BD4D1 /* Capstone_CafeBronco.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6F2EC0001EDAB2B9005BD4D1 /* Capstone_CafeBroncoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F2EC0181EDAB2B9005BD4D1 /* Build configuration list for PBXNativeTarget "Capstone_CafeBroncoTests" */;
+			buildPhases = (
+				EDF4EB5483EFB445C29831FD /* [CP] Check Pods Manifest.lock */,
+				6F2EBFFD1EDAB2B9005BD4D1 /* Sources */,
+				6F2EBFFE1EDAB2B9005BD4D1 /* Frameworks */,
+				6F2EBFFF1EDAB2B9005BD4D1 /* Resources */,
+				C739120039499894D47953F7 /* [CP] Embed Pods Frameworks */,
+				105646FA7486EF48029676F7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F2EC0031EDAB2B9005BD4D1 /* PBXTargetDependency */,
+			);
+			name = Capstone_CafeBroncoTests;
+			productName = Capstone_CafeBroncoTests;
+			productReference = 6F2EC0011EDAB2B9005BD4D1 /* Capstone_CafeBroncoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6F2EC00B1EDAB2B9005BD4D1 /* Capstone_CafeBroncoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F2EC01B1EDAB2B9005BD4D1 /* Build configuration list for PBXNativeTarget "Capstone_CafeBroncoUITests" */;
+			buildPhases = (
+				FC54EAFB7C9425E4BFBE8441 /* [CP] Check Pods Manifest.lock */,
+				6F2EC0081EDAB2B9005BD4D1 /* Sources */,
+				6F2EC0091EDAB2B9005BD4D1 /* Frameworks */,
+				6F2EC00A1EDAB2B9005BD4D1 /* Resources */,
+				602FCE7E3B06EA2DB249603C /* [CP] Embed Pods Frameworks */,
+				0B1DD37881A44384BB5068B4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F2EC00E1EDAB2B9005BD4D1 /* PBXTargetDependency */,
+			);
+			name = Capstone_CafeBroncoUITests;
+			productName = Capstone_CafeBroncoUITests;
+			productReference = 6F2EC00C1EDAB2B9005BD4D1 /* Capstone_CafeBroncoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F2EBFE31EDAB2B9005BD4D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = SCU;
+				TargetAttributes = {
+					6F2EBFEA1EDAB2B9005BD4D1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PR7Q4AKF7U;
+						ProvisioningStyle = Automatic;
+					};
+					6F2EC0001EDAB2B9005BD4D1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PR7Q4AKF7U;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6F2EBFEA1EDAB2B9005BD4D1;
+					};
+					6F2EC00B1EDAB2B9005BD4D1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PR7Q4AKF7U;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6F2EBFEA1EDAB2B9005BD4D1;
+					};
+				};
+			};
+			buildConfigurationList = 6F2EBFE61EDAB2B9005BD4D1 /* Build configuration list for PBXProject "Capstone_CafeBronco" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F2EBFE21EDAB2B9005BD4D1;
+			productRefGroup = 6F2EBFEC1EDAB2B9005BD4D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F2EBFEA1EDAB2B9005BD4D1 /* Capstone_CafeBronco */,
+				6F2EC0001EDAB2B9005BD4D1 /* Capstone_CafeBroncoTests */,
+				6F2EC00B1EDAB2B9005BD4D1 /* Capstone_CafeBroncoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F2EBFE91EDAB2B9005BD4D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FB665491F5B60B20085E9CB /* VendorOrderDetailsViewController.xib in Resources */,
+				6F2EBFFB1EDAB2B9005BD4D1 /* LaunchScreen.storyboard in Resources */,
+				6F57E2FD1F4E94C100574F07 /* GoogleService-Info.plist in Resources */,
+				6F2EBFF81EDAB2B9005BD4D1 /* Assets.xcassets in Resources */,
+				6F57E3031F4EBD3400574F07 /* CustOrderDetailViewController.xib in Resources */,
+				6F2EBFF61EDAB2B9005BD4D1 /* Main.storyboard in Resources */,
+				6FB6654D1F5B67820085E9CB /* LogInViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F2EBFFF1EDAB2B9005BD4D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F2EC00A1EDAB2B9005BD4D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B1DD37881A44384BB5068B4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Capstone_CafeBroncoUITests/Pods-Capstone_CafeBroncoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		103B8E8F0BC84B7F72286B23 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Capstone_CafeBronco/Pods-Capstone_CafeBronco-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		105646FA7486EF48029676F7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Capstone_CafeBroncoTests/Pods-Capstone_CafeBroncoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54E5F18B9741D8824C55A464 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Capstone_CafeBronco-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		602FCE7E3B06EA2DB249603C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Capstone_CafeBroncoUITests/Pods-Capstone_CafeBroncoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F10B0A76C449FC02567A79B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Capstone_CafeBronco/Pods-Capstone_CafeBronco-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Capstone_CafeBronco/Pods-Capstone_CafeBronco-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C739120039499894D47953F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Capstone_CafeBroncoTests/Pods-Capstone_CafeBroncoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDF4EB5483EFB445C29831FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Capstone_CafeBroncoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC54EAFB7C9425E4BFBE8441 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Capstone_CafeBroncoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F2EBFE71EDAB2B9005BD4D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AAC0A5C1F4A71C40093BBBD /* QR_Code_ViewController.swift in Sources */,
+				6FB665451F5B5DA90085E9CB /* VendorOrderHistoryTableViewController.swift in Sources */,
+				5AAC0A5A1F41176B0093BBBD /* Order_summary_ViewController.swift in Sources */,
+				5AAC0A561F4111160093BBBD /* Salad_Bar_ViewController.swift in Sources */,
+				6F2EBFF31EDAB2B9005BD4D1 /* ProfileViewController.swift in Sources */,
+				6F2EBFEF1EDAB2B9005BD4D1 /* AppDelegate.swift in Sources */,
+				5AAC0A541F40DB190093BBBD /* Mission_Bakery_ViewController.swift in Sources */,
+				6F57E3021F4EBD3400574F07 /* CustOrderDetailViewController.swift in Sources */,
+				6F2EBFF11EDAB2B9005BD4D1 /* RestaurantsViewController.swift in Sources */,
+				5AAC0A581F4111320093BBBD /* La_Parilla_ViewController.swift in Sources */,
+				6FB6654C1F5B67820085E9CB /* LogInViewController.swift in Sources */,
+				6F4E4D581EDCC8A70097ECD5 /* MenuItemsTableViewController.swift in Sources */,
+				6FB665481F5B60B20085E9CB /* VendorOrderDetailsViewController.swift in Sources */,
+				6F57E2FF1F4EBAB900574F07 /* CustOrderHistoryViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F2EBFFD1EDAB2B9005BD4D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F2EC0061EDAB2B9005BD4D1 /* Capstone_CafeBroncoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F2EC0081EDAB2B9005BD4D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F2EC0111EDAB2B9005BD4D1 /* Capstone_CafeBroncoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F2EC0031EDAB2B9005BD4D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F2EBFEA1EDAB2B9005BD4D1 /* Capstone_CafeBronco */;
+			targetProxy = 6F2EC0021EDAB2B9005BD4D1 /* PBXContainerItemProxy */;
+		};
+		6F2EC00E1EDAB2B9005BD4D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F2EBFEA1EDAB2B9005BD4D1 /* Capstone_CafeBronco */;
+			targetProxy = 6F2EC00D1EDAB2B9005BD4D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6F2EBFF41EDAB2B9005BD4D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F2EBFF51EDAB2B9005BD4D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6F2EBFF91EDAB2B9005BD4D1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F2EBFFA1EDAB2B9005BD4D1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6F2EC0131EDAB2B9005BD4D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6F2EC0141EDAB2B9005BD4D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F2EC0161EDAB2B9005BD4D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0B761F3727BD35B15190226 /* Pods-Capstone_CafeBronco.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PR7Q4AKF7U;
+				INFOPLIST_FILE = Capstone_CafeBronco/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SCU.Capstone-CafeBronco";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6F2EC0171EDAB2B9005BD4D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48C47B54C0E80FDDC4B290B9 /* Pods-Capstone_CafeBronco.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PR7Q4AKF7U;
+				INFOPLIST_FILE = Capstone_CafeBronco/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SCU.Capstone-CafeBronco";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6F2EC0191EDAB2B9005BD4D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D756D856DBA9E77A0FA85744 /* Pods-Capstone_CafeBroncoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PR7Q4AKF7U;
+				INFOPLIST_FILE = Capstone_CafeBroncoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SCU.Capstone-CafeBroncoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Capstone_CafeBronco.app/Capstone_CafeBronco";
+			};
+			name = Debug;
+		};
+		6F2EC01A1EDAB2B9005BD4D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65ACE1BC21BF80C28F5C2459 /* Pods-Capstone_CafeBroncoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PR7Q4AKF7U;
+				INFOPLIST_FILE = Capstone_CafeBroncoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SCU.Capstone-CafeBroncoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Capstone_CafeBronco.app/Capstone_CafeBronco";
+			};
+			name = Release;
+		};
+		6F2EC01C1EDAB2B9005BD4D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30CB1631705FB2137190889E /* Pods-Capstone_CafeBroncoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = PR7Q4AKF7U;
+				INFOPLIST_FILE = Capstone_CafeBroncoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SCU.Capstone-CafeBroncoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Capstone_CafeBronco;
+			};
+			name = Debug;
+		};
+		6F2EC01D1EDAB2B9005BD4D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E6964F73971F5410C0A9E42 /* Pods-Capstone_CafeBroncoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = PR7Q4AKF7U;
+				INFOPLIST_FILE = Capstone_CafeBroncoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SCU.Capstone-CafeBroncoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Capstone_CafeBronco;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F2EBFE61EDAB2B9005BD4D1 /* Build configuration list for PBXProject "Capstone_CafeBronco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F2EC0131EDAB2B9005BD4D1 /* Debug */,
+				6F2EC0141EDAB2B9005BD4D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F2EC0151EDAB2B9005BD4D1 /* Build configuration list for PBXNativeTarget "Capstone_CafeBronco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F2EC0161EDAB2B9005BD4D1 /* Debug */,
+				6F2EC0171EDAB2B9005BD4D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F2EC0181EDAB2B9005BD4D1 /* Build configuration list for PBXNativeTarget "Capstone_CafeBroncoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F2EC0191EDAB2B9005BD4D1 /* Debug */,
+				6F2EC01A1EDAB2B9005BD4D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F2EC01B1EDAB2B9005BD4D1 /* Build configuration list for PBXNativeTarget "Capstone_CafeBroncoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F2EC01C1EDAB2B9005BD4D1 /* Debug */,
+				6F2EC01D1EDAB2B9005BD4D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F2EBFE31EDAB2B9005BD4D1 /* Project object */;
+}

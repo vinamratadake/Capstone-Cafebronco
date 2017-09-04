@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>916755101332-7gqha5seo3j0epg9frvi8d6jsi3sgug9.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.916755101332-7gqha5seo3j0epg9frvi8d6jsi3sgug9</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB5bBM9_otZms28mWE_ytgAwT18tvgpxog</string>
+	<key>GCM_SENDER_ID</key>
+	<string>916755101332</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.SCU.Capstone-CafeBronco</string>
+	<key>PROJECT_ID</key>
+	<string>cafe-6571e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>cafe-6571e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:916755101332:ios:146f3237a6c3bcb7</string>
+	<key>DATABASE_URL</key>
+	<string>https://cafe-6571e.firebaseio.com</string>
+</dict>
+</plist>
