@@ -161,6 +161,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Scan QR Code"/>
                     <connections>
+                        <action selector="onScanQR:" destination="-1" eventType="touchUpInside" id="vtV-av-cyf"/>
                         <action selector="order_confirmation:" destination="-1" eventType="touchUpInside" id="huV-sc-vU5"/>
                     </connections>
                 </button>

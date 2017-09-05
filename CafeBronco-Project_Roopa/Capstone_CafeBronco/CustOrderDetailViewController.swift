@@ -54,10 +54,9 @@ class CustOrderDetailViewController: UIViewController {
 
     // Add code for QR code Scanner
     
-    
-    @IBAction func order_confirmation(_ sender: UIButton) {
-        // When customer presses Scan QR code button, view changes to camera mode
-        // Write logic to match WR code text with orderid and once the match is done, change order status to completed 
+    @IBAction func onScanQR(_ sender: Any) {
+        let scanVC = ScanQRCode()
+        self.present(scanVC, animated: true, completion: nil)
         
     }
     
