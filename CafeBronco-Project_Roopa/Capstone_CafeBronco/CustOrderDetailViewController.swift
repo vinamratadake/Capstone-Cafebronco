@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import Firebase
+public var order_id_scan: String? = nil
+
 
 class CustOrderDetailViewController: UIViewController {
+    
+    var ref: FIRDatabaseReference?
     
     var orderHistory: history?
 
@@ -28,6 +33,8 @@ class CustOrderDetailViewController: UIViewController {
         super.viewDidLoad()
         
         order_id.text = orderHistory?.order
+        order_id_scan = order_id.text!
+
         time.text = orderHistory?.datetime
         status.text = orderHistory?.status
         price.text = orderHistory?.price
@@ -38,7 +45,16 @@ class CustOrderDetailViewController: UIViewController {
         qty2.text = orderHistory?.qty2
         qty3.text = orderHistory?.qty3
 
-        // Do any additional setup after loading the view.
+        // Change order status to Completed when customer scans QR code
+        if (flag_qr == true){
+            ref = FIRDatabase.database().reference()
+            
+            let statusinfo = ["status":"Completed"]
+            let statusref = ref?.child("Orderid").child(order_id.text!)
+            statusref?.updateChildValues(statusinfo)
+        }
+
+        
     }
     
     
