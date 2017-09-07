@@ -191,14 +191,7 @@ class Order_summary_ViewController: UIViewController, PKPaymentAuthorizationView
         
         let status = "In process"
         let orderid = generateOrderId()
-        
-        // Start of QR code generator code
-        // Once orderid is generated, generate QR code for same and store it in customer database
-        
-        //let image = generateQRCode(from: orderid)
-        
-        // End of QR code generator code
-        
+    
         let data : [String : AnyObject] = ["item1" : os_item1.text as AnyObject,
                                            "item2" : os_item2.text as AnyObject,
                                            "item3" : os_item3.text as AnyObject,
@@ -209,7 +202,6 @@ class Order_summary_ViewController: UIViewController, PKPaymentAuthorizationView
                                            "datetime":datePicker.text as AnyObject,
                                            "order_id":orderid as AnyObject,
                                            "status" : status as AnyObject]
-        
     
         ref?.child("Orderid").child(orderid).setValue(data)
         

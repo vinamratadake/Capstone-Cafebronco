@@ -70,7 +70,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ESTBeaconManagerDelegate 
         UIApplication.shared.presentLocalNotificationNow(notification)
     }
 
-
-
 }
 

@@ -27,11 +27,8 @@ class ScanQRCode: UIViewController , AVCaptureMetadataOutputObjectsDelegate{
     var videoPreviewLayer:AVCaptureVideoPreviewLayer?
     var qrCodeFrameView:UIView?
     
-    
-    
     // Added to support different barcodes
     let supportedBarCodes = [AVMetadataObjectTypeQRCode, AVMetadataObjectTypeCode128Code, AVMetadataObjectTypeCode39Code, AVMetadataObjectTypeCode93Code, AVMetadataObjectTypeUPCECode, AVMetadataObjectTypePDF417Code, AVMetadataObjectTypeEAN13Code, AVMetadataObjectTypeAztecCode]
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -93,8 +90,7 @@ class ScanQRCode: UIViewController , AVCaptureMetadataOutputObjectsDelegate{
             // If any error occurs, simply print it out and don't continue any more.
             print(error)
             return
-        }
-        
+        }        
         
     }
     
