@@ -17,6 +17,13 @@ public struct login  {
     
     
 }
+
+public struct customer {
+    let emailid : String!
+    let password: String
+    let role : String
+}
+
 class LogInViewController: UIViewController {
     //reference for firebase
     var ref:FIRDatabaseReference?
@@ -24,8 +31,13 @@ class LogInViewController: UIViewController {
     @IBOutlet weak var emailid: UITextField!
     //password
     @IBOutlet weak var password: UITextField!
+    
+    @IBOutlet weak var error: UILabel!
+    
+    
     //array to store login details
     var tb_login = [login]()
+    var tb_customer = [customer]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,11 +75,45 @@ class LogInViewController: UIViewController {
                 
             }
             else{
-                self.setupCustomerView()
+                //self.setupCustomerView()
+                self.error.text = "Incorrect ID or Password"
+
             }
             
             
         })
+        
+        // get student credentials from database
+        
+        ref?.child("Customer").observe(.value, with: { (snapshot) in
+            
+            let snapshotValue = snapshot.value as? NSDictionary
+            let emailid = snapshotValue!["emailid"] as? String
+            let password = snapshotValue!["password"] as? String
+            let role = snapshotValue!["role"] as? String
+            self.tb_customer.insert(customer(emailid:emailid, password:password!, role:role!), at: 0)
+            let emailtext = self.tb_customer[0].emailid
+            let roletext = self.tb_customer[0].role
+            let pwdtext = self.tb_customer[0].password
+            
+            if(emailtext == self.emailid.text! && pwdtext == self.password.text!)
+            {
+                if(roletext == "student")
+                {
+                    self.setupCustomerView()
+                }
+                
+            }
+            else{
+                //self.setupCustomerView()
+                self.error.text = "Incorrect ID or Password"
+                //self.emailid.text! = ""
+                //self.password.text! = ""
+            }
+            
+            
+        })
+
 
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
