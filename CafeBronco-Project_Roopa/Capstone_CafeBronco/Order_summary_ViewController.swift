@@ -28,9 +28,14 @@ class Order_summary_ViewController: UIViewController, PKPaymentAuthorizationView
     @IBOutlet weak var os_finalTotal: UILabel!
     
     @IBOutlet weak var datePicker: UITextField!
+    
+    @IBOutlet weak var discountApplied: UILabel!
+    
     let pickupTime = UIDatePicker()
     
     var paymentRequest: PKPaymentRequest!
+    
+    var pretax: Float = 0.0
     
     //reference for firebase
     var ref : FIRDatabaseReference?
@@ -78,9 +83,19 @@ class Order_summary_ViewController: UIViewController, PKPaymentAuthorizationView
 
         os_subTotal.text = sign.appending(String(temp))
         
-        taxprice = temp * tax
+        pretax = temp
         
-        var_finaltotal = temp + (temp * tax)
+        if qrFlag == true{
+            
+            pretax = pretax * 0.9
+        
+            discountApplied.text = "Hurray!!10% discount applied"
+        }
+        
+        taxprice = pretax * tax
+        
+        //var_finaltotal = temp + (temp * tax)
+        var_finaltotal = pretax + taxprice
         
         os_finalTotal.text = sign.appending(String(var_finaltotal))
         
